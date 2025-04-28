@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Train Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: white;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+        }
+        .filters {
+            width: 200px;
+            background-color: white;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .filters h3 {
+            margin-top: 0;
+        }
+        .content {
+            display: flex;
+        }
+        .trains {
+            flex: 1;
+            padding: 20px;
+        }
+        .train {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .tt {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .ee {
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 15px;
+        }
+        .classes {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .dd {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            width: 120px;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid #ccc;
+        }
+        .regret {
+            color: red;
+            font-weight: bold;
+        }
+        .chance {
+            color: orange;
+            font-weight: bold;
+        }
+        .filters label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .ss {
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            align-items: center;
+        }
+        .reset {
+            color: red;
+            cursor: pointer;
+            font-size: 14px;
+            float: right;
+        }
+        .kk {
+            color: #b00020;
+            font-size: 14px;
+            margin-top: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>NEW DELHI (NDLS) ➔ MUMBAI CENTRAL (MMCT)</div>
+    <div>Tue, 29 Apr 2025 </div>
+</header>
+
+<div class="content">
+    <div class="filters">
+        <h3>Filters</h3>
+        <div><strong>Quota</strong></div>
+        <label><input type="radio" name="quota" checked> General</label>
+        <label><input type="radio" name="quota"> Tatkal</label>
+        <label><input type="radio" name="quota"> Ladies</label>
+        <label><input type="radio" name="quota"> Senior Citizen/Lower Berth</label>
+
+        <div style="margin-top:20px;"><strong>Origin Station</strong></div>
+        <label><input type="checkbox"> NZM</label>
+        <label><input type="checkbox"> NDLS</label>
+        <label><input type="checkbox"> DEE</label>
+        <label><input type="checkbox"> SZM</label>
+        <label><input type="checkbox"> ANDI</label>
+
+        <div style="margin-top:20px;"><strong>Destination Station</strong></div>
+        <label><input type="checkbox"> MMCT</label>
+        <label><input type="checkbox"> CSMT</label>
+        <label><input type="checkbox"> PNWL</label>
+        <label><input type="checkbox"> BDTS</label>
+
+        <div class="reset">RESET ALL</div>
+    </div>
+
+    <div class="trains">
+        <div class="ss">
+            Sort by:
+            <b>Departure</b>
+            Duration
+            Arrival
+        </div>
+
+        <div class="train">
+            <div class="tt">12904 - GOLDEN TEMPLE M</div>
+            <div class="ee">04:00 NZM ➔ 23:35 MMCT (19h 35m)</div>
+            <div class="classes">
+                <div class="dd">
+                    2A<br>₹2335<br><span class="regret">REGRET</span>
+                </div>
+                <div class="dd">
+                    3A<br>₹1630<br><span class="regret">REGRET</span>
+                </div>
+                <div class="dd">
+                    SL<br>₹620<br><span class="regret">REGRET</span>
+                </div>
+                <div class="dd">
+                    1A<br>₹3955<br><span class="chance">47% Chance</span>
+                </div>
+            </div>
+            <div class="kk">View Schedule</div>
+        </div>
+</body>
+</html>
